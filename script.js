@@ -348,6 +348,7 @@ document.addEventListener("DOMContentLoaded", function(){
         objectif += 0;
       }
     }
+    
     if(upblock == 0 && downblock == 0 && leftblock == 0 && rightblock == 0){
       $('#share').html("<p class='scoretext'>Vous avez fait un score de "+score+" points</p><p class='scoretext'>Partager mon score : </p> <a target='_blank' href='https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&text=2048%20-%20Mon%20score%20est%20de%20"+score+"&tw_p=tweetbutton&url=http%3A%2F%2Fintra.epitech.eu'>Twitter</a>");
       if(objectif >= 1){
@@ -356,12 +357,7 @@ document.addEventListener("DOMContentLoaded", function(){
         $('#toploose').html("<p>Fin de la partie !</p><p>Dommage .. Vous n'avez pas atteint 2048 ..</p><a id='restart'>NewGame</a>");
       }
       
-    /*$("#toploose").animate({
-      height: "200px",
-    }, 1500 );
-    $("#carre").animate({
-      opacity: 0.4,
-    }, 1500 );*/
+    
     $('#restart').click(function(){
       location.reload();
     });
